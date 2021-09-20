@@ -1,5 +1,5 @@
-# digitizing_ariports
-Airports digitalization using python and overpass api
+# Airports digitalization using python and overpass api
+
 
 This project is about automating the process of airport digitalization which can be divided into two major steps: Airport Edges Detection and Airport Edges Extraction. For the first, we used the “OpenCV” python library to enhance rasters as well as detect edges. The next step was about converting edge raster to polyline using “arcpy” library, defining the area of interest (which is going to be used later on for the OSM query) by calculating the raster extent, also, exporting the airport polygon to Geojson and then converting it to shapefile to finally, clip the Polyline Edges to the airport polygon and get our airport edges.
 
